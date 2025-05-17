@@ -2,6 +2,14 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- nerd font
+vim.g.have_nerd_font = true
+
+-- inline errors
+vim.diagnostic.config {
+  virtual_text = true,
+}
+
 -- Indentation
 vim.opt.tabstop = 2 -- A tab character appears as 2 spaces
 vim.opt.shiftwidth = 2 -- Indentation uses 2 spaces
