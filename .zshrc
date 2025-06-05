@@ -77,8 +77,5 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# depot_tools
-export DEPOT_TOOLS="$HOME/projects/chromix/depot_tools"
-export PATH="$DEPOT_TOOLS:$PATH"
 
 . "$HOME/.local/bin/env"
