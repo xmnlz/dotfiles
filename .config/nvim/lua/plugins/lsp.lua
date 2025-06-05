@@ -88,6 +88,7 @@ return {
       gopls = {},
       ts_ls = {},
       lua_ls = {},
+      zls = {},
     }
 
     require('mason').setup()

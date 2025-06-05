@@ -27,6 +27,7 @@ return {
       }
     end,
     formatters_by_ft = {
+      zig = { 'zigfmt' },
       lua = { 'stylua' },
       svelte = { 'biome', 'prettierd', 'prettier', stop_after_first = true },
       astro = { 'biome', 'prettierd', 'prettier', stop_after_first = true },

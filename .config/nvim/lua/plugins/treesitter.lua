@@ -5,6 +5,7 @@ return {
   main = 'nvim-treesitter.configs', -- Sets main module to use for opts
   opts = {
     ensure_installed = {
+      'zig',
       'javascript',
       'typescript',
       'c',
