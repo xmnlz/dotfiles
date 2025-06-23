@@ -89,6 +89,10 @@ return {
       ts_ls = {},
       lua_ls = {},
       zls = {},
+      tailwindcss = {},
+      svelte = {},
+      html = {},
+      stylua = {},
     }
 
     require('mason').setup()
