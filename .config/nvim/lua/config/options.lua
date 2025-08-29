@@ -10,6 +10,8 @@ vim.diagnostic.config {
   virtual_text = true,
 }
 
+vim.opt.winborder = 'rounded'
+
 -- Indentation
 vim.opt.tabstop = 2 -- A tab character appears as 2 spaces
 vim.opt.shiftwidth = 2 -- Indentation uses 2 spaces
