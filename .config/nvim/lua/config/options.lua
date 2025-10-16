@@ -27,7 +27,6 @@ vim.opt.number = true -- Show absolute line numbers
 vim.opt.relativenumber = true -- Show relative line numbers
 
 --  UI & Display
-vim.opt.showmode = false -- Don’t show -- INSERT --, etc. (handled by statusline)
 vim.opt.cursorline = true -- Highlight the current line
 vim.opt.signcolumn = 'yes' -- Always show the sign column (for Git, LSP signs)
 vim.opt.scrolloff = 15 -- Keep 15 lines above/below cursor visible
