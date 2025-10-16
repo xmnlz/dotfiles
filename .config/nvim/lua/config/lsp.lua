@@ -7,6 +7,7 @@ vim.lsp.enable {
   'ts_ls',
   'html',
   'zls',
+  'docker_language_server',
 }
 
 vim.api.nvim_create_autocmd('LspAttach', {
