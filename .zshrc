@@ -43,10 +43,8 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 # Aliases
-alias ls='eza --color=auto --icons=always'
 alias vim='nvim'
 alias c='clear'
-alias cat='bat'
 alias f="fzf --height 40%"
 alias sd="cd ~ && cd \$(find * -type d | fzf)"
 
@@ -77,5 +75,4 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-
-. "$HOME/.local/bin/env"
+# . "$HOME/.local/bin/env"
