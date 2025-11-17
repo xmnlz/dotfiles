@@ -1,0 +1,24 @@
+# Theme colors
+background-color=#282828cc   # Slight transparency
+border-color=#458588
+text-color=#ebdbb2
+frame-color=#3c3836
+
+# Fonts
+font=Fira Sans 10
+
+# Icon settings
+icon-size=32  # Pixels
+icon-position=left
+
+# Layout
+width=300
+margin=10
+padding=10
+gap=8
+border-size=2
+corner-radius=8
+
+# Behavior
+timeout=5000       # 5 seconds
+hidden=true        # Start hidden

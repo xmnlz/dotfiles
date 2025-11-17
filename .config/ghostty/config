@@ -1,0 +1,4 @@
+theme = GitHub Dark
+
+command = zsh 
+shell-integration = zsh

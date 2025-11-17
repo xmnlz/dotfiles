@@ -1,0 +1,157 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin": "4 4", 
+  "spacing": 0, 
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "custom/music",
+    "group/system-icons", 
+    "hyprland/language",
+    "custom/lock",
+  ],
+
+  "hyprland/language": {
+    "format-en": "EN",
+    "format-ru": "RU"
+   },
+
+  "group/system-icons": {
+    "tooltip": false,
+    "orientation": "horizontal",
+    "modules": [
+      "network",
+      "bluetooth",
+      "pulseaudio",
+      "backlight",
+      "battery",
+      "tray" 
+    ]
+  },
+
+  "hyprland/workspaces": {
+    "format": "{name}: {icon}",
+    "format-icons": {
+      "active": "",
+      "default": ""
+    }
+  },
+
+  "bluetooth": {
+    "format": "󰂲",
+    "format-on": "{icon}",
+    "format-off": "{icon}",
+    "format-connected": "{icon}",
+    "format-icons": {
+      "on": "󰂯",
+      "off": "󰂲",
+      "connected": "󰂱"
+    },
+    "on-click": "blueman-manager",
+    "tooltip-format-connected": "{device_enumerate}",
+    // ADD THESE TWO LINES TO PREVENT SCROLL CRASHES
+    "on-scroll-down": "",
+    "on-scroll-up": ""
+
+  },
+
+  "custom/music": {
+    "format": "  {}",
+    "escape": true,
+    "interval": 5,
+    "tooltip": false,
+    "exec": "playerctl metadata --format='{{ artist }} - {{ title }}'",
+    "on-click": "playerctl play-pause",
+    "max-length": 50
+  },
+
+  "clock": {
+    "tooltip": false,
+    "format": "{:%H:%M  |  %a, %d}",
+    "interval": 30
+  },
+
+  "network": {
+    "format-wifi": "󰤢",
+    "format-ethernet": "󰈀 ",
+    "format-disconnected": "󰤠 ",
+    "interval": 5,
+    "tooltip-format": "{essid} ({signalStrength}%)",
+    "on-click": "nm-connection-editor",
+    // ADD THESE TWO LINES TO PREVENT SCROLL CRASHES
+    "on-scroll-up": "",
+    "on-scroll-down": ""
+  },
+
+  "backlight": {
+    "format": "{icon}",
+    "format-icons": [
+      "",
+      "󰃜",
+      "󰃛",
+      "󰃞",
+      "󰃝",
+      "󰃟",
+      "󰃠"
+    ],
+    "tooltip": true,
+    "tooltip-format": "{percent}%" 
+  },
+
+  "pulseaudio": {
+    "format": "{icon}", 
+    "format-muted": "",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        " "
+      ]
+    },
+    "tooltip": true,
+    "tooltip-format": "{volume}%", 
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+  },
+
+  
+  "battery": {
+    "interval": 2,
+    "states": {
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{icon}", 
+    "format-full": "", 
+    "format-charging": "", 
+    "format-plugged": "",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tooltip": true,
+    "tooltip-format": "{capacity}%",
+    // ADD THESE TWO LINES TO PREVENT SCROLL CRASHES
+    "on-scroll-down": "",
+    "on-scroll-up": ""
+  },
+
+  "tray": {
+    "icon-size": 16
+  },
+
+  "custom/lock": {
+    "tooltip": false,
+    "on-click": "sh -c '(sleep 0s; hyprlock)' & disown",
+    "format": ""
+  }
+}
