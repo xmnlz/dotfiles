@@ -1,4 +1,6 @@
 theme = GitHub Dark
 
+background-opacity = 0.98
+
 command = zsh 
 shell-integration = zsh
